@@ -5,17 +5,17 @@ font-family: 'Roboto', sans-serif; */
     --logo-color-header:#000000;
     --logo-color-footer: #FFFFFF;
     --background-footer-color: #2F303A;
-    --background-header-color: #ECECEC;
     --primary-text-color: #212121;
     --primary-address-color: #757575;
     --section-color-background:#F5F4FA;
+    --hero-button-hover: #188CE8;
 }
 
 
 
 
 body {
-    font-family: Roboto;
+    font-family: Roboto,sans-serif;
 }
 .button {
     cursor: pointer;
@@ -27,11 +27,11 @@ body {
     list-style-type: none;
 }
 .header {
-    background-color: var(--background-header-color);
+    
 }
 .header-logo {
     color: var(--logo-color-main);
-    font-family: 'Raleway';
+    font-family: 'Raleway',sans-serif;
     font-size: 26px;
     line-height: 1.2;
 }
@@ -94,7 +94,7 @@ h1 {
     font-size: 44px;
     line-height: 1.4;
 }
-.button {
+.hero-button {
     background-color: var(--logo-color-main);
     color: var(--logo-color-footer);
     font-weight: 700;
@@ -104,6 +104,21 @@ h1 {
     letter-spacing: 0.06em;
     cursor: pointer;
 }
+.hero-button:hover, .hero-button:focus {
+    background-color: var(--hero-button-hover) ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+/* .button {
+    background-color: var(--logo-color-main);
+    color: var(--logo-color-footer);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+} */
 .visual-hidden {
     position: absolute;
     width: 1px;
@@ -140,6 +155,9 @@ h1 {
     text-align: center;
     letter-spacing: 0.03em
 }
+.team-group {
+    background-color: var(--logo-color-footer);
+}
 .team-name {
     font-weight: 500;
     font-size: 16px;
@@ -155,6 +173,9 @@ h1 {
     letter-spacing: 0.03em;
 }
 /* Портфоліо */
+.header-link.current {
+    color: var(--hero-button-hover);
+}
 .button-filter {
     cursor: pointer;
     font-weight: 500;
@@ -162,6 +183,7 @@ h1 {
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
+    font-family: inherit;
 }
 .button-filter:hover, .button-filter:focus {
     color: var(--logo-color-footer);
